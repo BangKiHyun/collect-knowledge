@@ -2,7 +2,7 @@
 
 - Java 컬렉션 프레임웤의 상속구조
 
-![1582963142026](C:\Users\rlrlv\AppData\Roaming\Typora\typora-user-images\1582963142026.png)
+  ![java collection 인터페이스 이미지 검색결과](https://t1.daumcdn.net/cfile/tistory/2677ED335306211E32)
 
 
 

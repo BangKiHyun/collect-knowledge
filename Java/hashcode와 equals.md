@@ -52,13 +52,15 @@ public class HashcodeTest {
 
 위와 같이 작성하고 출력하면 결과는 아래와 같다.
 
-**object의 참조변수 값: java.lang.Object@72ea2f77**
-**object의 hashcode 값: 1927950199**
+~~~
+object의 참조변수 값: java.lang.Object@72ea2f77
+object의 hashcode 값: 1927950199
 
-**user의 참조변수 값: hashAndEql.User@816f27d**
-**user의 hashcode 값: 135721597**
+user의 참조변수 값: hashAndEql.User@816f27d
+user의 hashcode 값: 135721597
 
-**String 객체의 hashcode 값 : -218279959**
+String 객체의 hashcode 값 : -218279959
+~~~
 
 - 첫줄 72ea2f77은 16진수이고, 이를 10진수로 변환시킨 1927950199가 hashcode 리턴값 이다.
 - 서로다른 객체는 서로 다른 주소값을 갖기 떄문에 다른 hashcode 값은 갖는다.
@@ -145,9 +147,11 @@ public class OverridingHashTest {
 
 위와 같이 equals 메서드를 재정의 하고 출력하면 결과는 다음과 같다.
 
-**user1.equals(user2) 는 true 입니다.**
-**user1 의 hashcode 값: 1418481495**
-**user2 의 hashcode 값: 303563356**
+~~~
+user1.equals(user2) 는 true 입니다.
+user1 의 hashcode 값: 1418481495
+user2 의 hashcode 값: 303563356
+~~~
 
 - 위 코드를 보면  equals 메서드만 수정해도 user1.equals(user2) 를 하였을때 true가 나온다.
   하지만, 두 객체의 hashcode가 다르게 나온다.
@@ -164,9 +168,11 @@ public int hashCode() {
 
 출력 결과는 다음과 같다.
 
-**user1.equals(user2) 는 true 입니다.**
-**user1 의 hashcode 값: 3016274**
-**user2 의 hashcode 값: 3016274**
+```
+user1.equals(user2) 는 true 입니다.
+user1 의 hashcode 값: 3016274
+user2 의 hashcode 값: 3016274
+```
 
 정리하자면 **equals 메서드에 의해 true가 나오는 두 객체의 hashcode는 같아야 한다.**
 그래야 hashcode가 의미가 있는 것이다.

@@ -51,6 +51,29 @@
 
 </br >
 
+### IoC 분류
+
+![img](https://blog.kakaocdn.net/dn/cMOiS8/btqXXVmQNZO/SI1dFYmN61qMD9n2HkRHK1/img.png)
+
+IoC는 크게 2가지로 분류될 수 있습니다.
+
+1. DL(Dependency Lookup)
+
+- 저장소에 의해 관리되고 있는 bean에 접근하기 위해 개발자들이 직접 컨테이너가 제공하는 API를 이용하여 Bean을 Lookup 하는 것을 말합니다.
+
+2. DI(Dependency Injection)
+
+- 각각의 클래스 사이의 의존관계를 빈 설정 정보를 바탕으로 컨테이너가 자동적으로 연결해 주는 것을 말합니다.
+- 빈 설정 파일에서 의존관계가 필요하다는 정보만 추가하면 되기 때문에 코드가 단순해지고, 컴포넌트 간의 결합도가 제거됩니다.
+
+### DI 분류
+
+- Setter: setter를 통해 필요한 의존성을 주입합니다.
+- Constructor: 생성자를 만들 때 argument로 필요한 의존성을 주입합니다.
+- Method: 일반 메서드를 통해 필요한 의존성을 주입합니다.
+
+</br >
+
 ## IoC와 DI의 관계
 
 DI는 IoC를 실현시키기 위한 방법 중 하나

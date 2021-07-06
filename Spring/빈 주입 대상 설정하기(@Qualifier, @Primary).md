@@ -8,7 +8,7 @@ Spring은 기본적으로 빈 주입을 설정을 자동으로 해준다. 하지
 
 ## @Qualifier
 
-`@Qualifier` 어노테이션은 주입할 빈 객체를 선택할 수 있도록 도와준다.
+`@Qualifier` 어노테이션을 사용할 의존 객체를 선택할 수 있도록 도와준다.
 
 ## 코드 예제
 
@@ -59,9 +59,9 @@ public class CandidateRestTemplateConfig {
 
 위 코드는 `@Configuration` 어노테이션을 사용해서 Bean을 생성했다. `@Configuration`에 대한 설명은 다음과 같다.
 
-- `@Configuration` 어노테이션은 **해당 클래스가 1개 이상의 Bean을 생성하고 있음을 명시한다.**
+- `@Configuration` 어노테이션은 해당 클래스가 1개 이상의 Bean을 생성하고 있음을 명시한다.
 - 그렇기 때문에 `@Bean` 어노테이션을 사용하는 클래스의 경우 반드시 `@Configuration`을 붙여줘야 한다.
-- `@Bean`으로 정의된 메서드들은 Spring Container가 런타임에 해당 Bean을 정의한다.
+- `@Bean`으로 정의된 메서드들은 Spring Container가 런타임에 Bean 정의 및 서비스 요청을 생성하기 위해 처리할 수 있음을 선언한다.
 
 ### 언제 사용하나?
 
